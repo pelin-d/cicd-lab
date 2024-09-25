@@ -15,7 +15,7 @@ jobs:
 
       - name: Run Lint Check
         run: npm run lint
-   deploy:
+  deploy:
     needs: lint
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
